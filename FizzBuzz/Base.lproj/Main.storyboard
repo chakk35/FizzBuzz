@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSX-96-ejo">
+                                <rect key="frame" x="40" y="281" width="334" height="334"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJT-l7-sHE">
+                                        <rect key="frame" x="0.0" y="0.0" width="160.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVP-3K-J4H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q77-vX-yU3">
+                                        <rect key="frame" x="173.5" y="0.0" width="160.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzB"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ahk-eP-uDW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIJ-B3-rdl">
+                                        <rect key="frame" x="0.0" y="173.5" width="160.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzB"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPH-d7-W32"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcH-61-QoP">
+                                        <rect key="frame" x="173.5" y="172.5" width="160.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzB"/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U11-ad-u6F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Q77-vX-yU3" secondAttribute="trailing" id="3Cr-gj-qZ2"/>
+                                    <constraint firstItem="hIJ-B3-rdl" firstAttribute="width" secondItem="jSX-96-ejo" secondAttribute="width" multiplier="0.48" id="AUK-Wa-3Yu"/>
+                                    <constraint firstItem="FJT-l7-sHE" firstAttribute="width" secondItem="jSX-96-ejo" secondAttribute="width" multiplier="0.48" id="KNu-Zz-DAv"/>
+                                    <constraint firstItem="QcH-61-QoP" firstAttribute="height" secondItem="jSX-96-ejo" secondAttribute="height" multiplier="0.48" id="KSs-cV-NAN"/>
+                                    <constraint firstItem="Q77-vX-yU3" firstAttribute="width" secondItem="jSX-96-ejo" secondAttribute="width" multiplier="0.48" id="LC4-bn-Unx"/>
+                                    <constraint firstItem="hIJ-B3-rdl" firstAttribute="height" secondItem="jSX-96-ejo" secondAttribute="height" multiplier="0.48" id="Rkc-dC-Zd5"/>
+                                    <constraint firstItem="hIJ-B3-rdl" firstAttribute="leading" secondItem="jSX-96-ejo" secondAttribute="leading" id="SDG-Rb-V81"/>
+                                    <constraint firstItem="FJT-l7-sHE" firstAttribute="top" secondItem="jSX-96-ejo" secondAttribute="top" id="SpU-53-0I2"/>
+                                    <constraint firstItem="Q77-vX-yU3" firstAttribute="top" secondItem="jSX-96-ejo" secondAttribute="top" id="bg8-Ne-R4X"/>
+                                    <constraint firstAttribute="width" secondItem="jSX-96-ejo" secondAttribute="height" multiplier="1:1" id="lxQ-A3-ter"/>
+                                    <constraint firstItem="QcH-61-QoP" firstAttribute="width" secondItem="jSX-96-ejo" secondAttribute="width" multiplier="0.48" id="mNh-Tn-XVB"/>
+                                    <constraint firstAttribute="bottom" secondItem="QcH-61-QoP" secondAttribute="bottom" id="mar-Ft-7Qd"/>
+                                    <constraint firstAttribute="trailing" secondItem="QcH-61-QoP" secondAttribute="trailing" id="rNI-zl-uXM"/>
+                                    <constraint firstItem="FJT-l7-sHE" firstAttribute="height" secondItem="jSX-96-ejo" secondAttribute="height" multiplier="0.48" id="rXg-4L-ORa"/>
+                                    <constraint firstAttribute="bottom" secondItem="hIJ-B3-rdl" secondAttribute="bottom" id="rtL-PT-WOy"/>
+                                    <constraint firstItem="Q77-vX-yU3" firstAttribute="height" secondItem="jSX-96-ejo" secondAttribute="height" multiplier="0.48" id="sM3-mA-pXn"/>
+                                    <constraint firstItem="FJT-l7-sHE" firstAttribute="leading" secondItem="jSX-96-ejo" secondAttribute="leading" id="xsW-J0-gDn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZD-Uy-hX5">
+                                <rect key="frame" x="295" y="802" width="99" height="40"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.97254901960784312" green="0.95294117647058818" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tga-xQ-51u">
+                                <rect key="frame" x="350" y="64" width="44" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.95294117649999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.72156862745098038" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oZD-Uy-hX5" secondAttribute="bottom" constant="20" id="59d-ob-yh1"/>
+                            <constraint firstItem="oZD-Uy-hX5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="AS0-DH-Ifk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jSX-96-ejo" secondAttribute="trailing" constant="40" id="EuD-SB-auF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oZD-Uy-hX5" secondAttribute="trailing" constant="20" id="FWZ-WQ-qPW"/>
+                            <constraint firstItem="jSX-96-ejo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="aAm-07-Vr5"/>
+                            <constraint firstItem="Tga-xQ-51u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="d95-7X-4g1"/>
+                            <constraint firstItem="jSX-96-ejo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jZZ-8d-hP2"/>
+                            <constraint firstItem="jSX-96-ejo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m7u-ID-chn"/>
+                            <constraint firstItem="Tga-xQ-51u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="msD-xr-UNb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tga-xQ-51u" secondAttribute="trailing" constant="20" id="xOT-Y4-fLx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buzzB" destination="hIJ-B3-rdl" id="xF6-f6-1Tc"/>
+                        <outlet property="fizzB" destination="Q77-vX-yU3" id="YPR-zq-EEC"/>
+                        <outlet property="fizzBuzzB" destination="QcH-61-QoP" id="Chd-PD-MYt"/>
+                        <outlet property="numberB" destination="FJT-l7-sHE" id="pve-6s-Kdo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="49" height="50"/>
+        <image name="lightning" width="29" height="50"/>
+        <image name="space" width="47" height="50"/>
+    </resources>
+</document>
