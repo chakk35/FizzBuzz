@@ -11,7 +11,7 @@ import XCTest
 @testable import FizzBuzz
 
 class ViewControllerTests: XCTestCase {
-    
+
     var viewController: ViewController!
 
     override func setUp() {
@@ -24,8 +24,6 @@ class ViewControllerTests: XCTestCase {
         viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
         
         UIApplication.shared.keyWindow?.rootViewController = viewController
-        
-        let _ = viewController.view
     }
 
     override func tearDown() {

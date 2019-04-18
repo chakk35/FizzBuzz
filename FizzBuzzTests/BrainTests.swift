@@ -11,7 +11,7 @@ import XCTest
 @testable import FizzBuzz
 
 class BrainTests: XCTestCase {
-    
+
     let brain = Brain()
 
     override func setUp() {

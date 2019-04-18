@@ -7,3 +7,4 @@ install:
 jobs:
   include:
     - script: xcodebuild clean build test -project FizzBuzz.xcodeproj -scheme FizzBuzz -destination "platform=iOS Simulator,name=iPhone XR,OS=12.2" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+    - script: swiftlint
