@@ -6,6 +6,5 @@ install:
 
 jobs:
   include:
-    - script: xcodebuild clean build test -project FizzBuzz.xcodeproj -scheme FizzBuzz -destination "platform=iOS Simulator,name=iPhone XR,OS=12.2" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-    after_script: bash <(curl -s https://codecov.io/bash) -t 3d20bf4b-f628-4d2b-8f6a-2f8b54d963c0
+    - script: xcodebuild clean build test -project FizzBuzz.xcodeproj -scheme FizzBuzz -destination "platform=iOS Simulator,name=iPhone XR,OS=12.2" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -enableCodeCoverage YES | xcpretty -c after_script: bash <(curl -s https://codecov.io/bash) -t 3d20bf4b-f628-4d2b-8f6a-2f8b54d963c0
     - script: swiftlint
